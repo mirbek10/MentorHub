@@ -52,12 +52,6 @@ const MentorCart = ({ mentor }) => {
         <div className='btn-price'>
         <p className="project-price">{mentor.price} <span>C</span> </p>
          <Link to={'/mentor-detail'}><button>Технологии</button></Link> 
-          <p className="project-price">
-            0 <span>C</span>
-          </p>
-          <Link to={`/mentors-detail/${mentor.id}`} className='btn'>
-            <button>Технологии</button>
-          </Link>
         </div>
       </div>
     </div>

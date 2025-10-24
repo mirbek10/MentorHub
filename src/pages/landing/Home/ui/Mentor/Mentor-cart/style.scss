@@ -1,213 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-.mentor-cart{
-    margin-left: 10px !important;
-    margin-right: 10px !important;
-    max-width: 900px !important;
-    height: 642px !important;
-    margin: 0 auto;
-    z-index: 120;
-    overflow: hidden;
-     box-shadow: 0 5px 14px rgba(118, 117, 117, 0.5);
-    border-radius: 24px;
-    z-index: 100;
-    .mentor-logo{
+.mentor-cart {
+  margin: 10px auto;
+  max-width: 360px; // карточка туура көлөмдө
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 5px 14px rgba(118, 117, 117, 0.5);
+  overflow: hidden;
+  font-family: 'Jost', sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  .mentor-logo {
     width: 100%;
-    height: 257px;
-    overflow: hidden;
+    height: 260px;
     background-color: #D7DFE9;
-    box-sizing: border-box;
-    background-repeat: no-repeat;
-    position: relative;
     border-radius: 24px;
-    .mentor-rating{
-        width: 83px;
-        padding: 6px 10px;
-        border-radius: 16px;
-        height: 34px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 24px;
+      transform: scale(1); // 1.4 алып салдык
+      transition: transform 0.3s ease;
+    }
+
+    .mentor-rating {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      padding: 6px 12px;
+      background: #fff;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .mentor-btn {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+
+      button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #212121;
+        color: white;
         display: flex;
-        justify-content: center;
-        background-color: #fff;
         align-items: center;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        font-family: Jost;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: 0px;
-        text-align: center;
-        img{
-            margin-top: -2px;
-        }
-    }
-    .mentor-btn{
-        position: absolute;
-        top: 129px;
-        right: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        button:nth-child(1){
-            font-size: 15px;
-            color: #FFD02C;
-            width: 48px;
-            border-radius: 50%;
-            background-color: #212121;
-            height: 48px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            transition: background-color 0.3s ease-in-out;
-        }
-        button:nth-child(2){
-            font-size: 23px;
-            width: 48px;
-            border-radius: 50%;
-            background-color: #212121;
-            color: white;
-            height: 48px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            transition: background-color 0.3s ease-in-out;
-        }
-        button:hover{
-            background-color: #636363;
-        }
-    
-    }
-    img{
-        margin: auto;
-        transform: scale(1.4);
-        width: 75%;
-        height: 100%;
-        border-radius: 24px;
-    }
-    }
-    .item-m-cart{
-        line-height: 39px;
-        width: 100%;
-        height: 100%;
-        padding: 30px 30px;
-        p:nth-child(2){
-            margin-top: 8px;
-            color: #6F6D73;
-            font-family: Jost;
-font-weight: 500;
-font-size: 14px;
-line-height: 22px;
-letter-spacing: 0px;
-
-        }
-        .mentor-textp{
-            margin-top: 12px;
-            color: rgb(0, 0, 0);
-            font-family: Jost;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 0px;
-            text-align: left; 
-        }
-        h3{
-            color: rgb(0, 0, 0);
-font-family: Jost;
-font-size: 24px;
-font-weight: 700;
-line-height: 120%;
-letter-spacing: 0px;
-text-align: left;
-        }
-        h4{
-            color: rgb(0, 0, 0);
-            font-family: Jost;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 25px;
-            letter-spacing: 0px;
-            text-align: left;  
-        }
-        .opyt{
-            margin-top: 10px;
-            width: 100%;
-            display: flex;
-            gap: 6px;
-          div{
-            background-color: #D5F6ED;
-            border-radius: 22px;
-            border: 1px solid #222;
-            padding: 8px 20px;
-            cursor: pointer;
-          }
-          div:hover{
-            transition: all 0.3s ease;
-            background-color: #E2DBFA;
-          }
-        }
-        .btn-price{
-            margin-top: 12px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-            width: 100%;
-            height: 64px;
-             .project-price {
-    font-family: Jost;
-font-weight: 700;
-font-size: 24px !important;
-line-height: 120%;
-letter-spacing: 0px;
-text-decoration-skip-ink: auto;
-  span{
-    text-decoration: underline;
-  }
-  }
- .project-price {
-    font-family: Jost;
-font-weight: 700;
-font-size: 24px;
-line-height: 120%;
-letter-spacing: 0px;
-text-decoration-skip-ink: auto;
-  span{
-    text-decoration: underline;
-  }
-  }
-
-            button{
-                cursor: pointer;
-                background-color: rgb(45, 45, 45);
-                border-radius: 24px;
-                padding: 20px 24px;
-                color: rgb(255, 255, 255);
-font-family: Jost;
-font-size: 20px;
-font-weight: 700;
-line-height: 24px;
-letter-spacing: 0px;
-text-align: center;
-            }
-            button:hover{
-                transition: background-color 0.3s ease-in-out;
-                background-color: #636363;}
-        }
-        .spec{
-            background-color: #E1F3FF;
-            margin-top: 8px;
-            width: 100%;
-            display: flex;
-        border: 1px solid #222;
-        border-radius: 22px;
-        padding: 8px 20px;
+        justify-content: center;
         cursor: pointer;
+        font-size: 18px;
+
+        &:hover {
+          background-color: #636363;
         }
-        .spec:hover{
-            transition: all 0.3s ease;
-            background-color: #E2DBFA;
-        }
+      }
     }
+  }
+
+  .item-m-cart {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #000;
+    }
+
+    p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .opyt,
+    .spec {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+
+      div {
+        background-color: #D5F6ED;
+        border-radius: 22px;
+        padding: 6px 12px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: #E2DBFA;
+        }
+      }
+    }
+
+    .btn-price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 12px;
+
+      .project-price {
+        font-weight: 700;
+        font-size: 18px;
+        color: #23afce;
+        span {
+          text-decoration: underline;
+        }
+      }
+
+      button {
+        background-color: #2d2d2d;
+        color: #fff;
+        padding: 10px 16px;
+        border-radius: 12px;
+        font-weight: 700;
+        font-size: 16px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #636363;
+        }
+      }
+    }
+  }
+}
+
+// Адаптив
+@media (max-width: 768px) {
+  .mentor-cart {
+    max-width: 100%;
+  }
 }
