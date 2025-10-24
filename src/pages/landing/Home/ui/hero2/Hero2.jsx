@@ -10,7 +10,7 @@ const Hero2 = () => {
       {/* Flex контейнер */}
       <div className="flex justify-center items-start flex-wrap gap-[40px] max-w-[1300px] mx-auto mt-[30px]">
         {/* Карточка 1 */}
-        <div className="w-[380px] bg-[#FAFAFA] rounded-[30px] p-6 font-jost">
+        <div className="w-[380px] bg-[#FAFAFA] rounded-[30px] p-6 font-jost max-[550px]:w-full">
           <h1 className="font-bold text-[64px] text-[#6F6D73]">01</h1>
           <h2 className="font-bold text-[24px] mt-[10px] text-[#333]">Менторы</h2>
           <p className="text-[#23AFCE] font-semibold text-[16px] mt-[25px]">Что вы получите:</p>
@@ -22,7 +22,7 @@ const Hero2 = () => {
         </div>
 
         {/* Карточка 2 */}
-        <div className="w-[380px] bg-[#FAFAFA] rounded-[30px] p-6 font-jost">
+        <div className="w-[380px] bg-[#FAFAFA] rounded-[30px] p-6 font-jost max-[550px]:w-full">
           <h1 className="font-bold text-[64px] text-[#6F6D73]">02</h1>
           <h2 className="font-bold text-[24px] mt-[10px] text-[#333]">Проекты</h2>
           <p className="text-[#23AFCE] font-semibold text-[16px] mt-[25px]">Что вы получите:</p>
@@ -35,7 +35,7 @@ const Hero2 = () => {
         </div>
 
         {/* Карточка 3 */}
-        <div className="w-[380px] bg-[#FAFAFA] rounded-[30px] p-6 font-jost">
+        <div className="w-[380px] bg-[#FAFAFA] rounded-[30px] p-6 font-jost lg:mb-0 mb-10 max-[550px]:w-full ">
           <h1 className="font-bold text-[64px] text-[#6F6D73]">03</h1>
           <h2 className="font-bold text-[24px] mt-[10px] text-[#333]">Курсы</h2>
           <p className="text-[#23AFCE] font-semibold text-[16px] mt-[25px]">Что вы получите:</p>
