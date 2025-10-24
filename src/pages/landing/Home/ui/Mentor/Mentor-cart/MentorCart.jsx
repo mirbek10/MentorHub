@@ -1,5 +1,5 @@
 import React from 'react';
-import smile from '../../../assets/img/Smile_rating.svg';
+import smile from '../../../../../../../public/assets/img/Smile_rating.svg';
 import { IoHeartSharp } from "react-icons/io5";
 import { SlControlPlay } from "react-icons/sl";
 import './style.scss';
@@ -15,8 +15,8 @@ const MentorCart = ({ mentor }) => {
 
         <div className="images-container">
           <img
-            src={ 'https://via.placeholder.com/150'}
-            alt={`Ментор ${mentor.firstName} ${mentor.secondName}`}
+            src={mentor.img}
+            alt={`Ментор ${mentor.name}`}
             className="mentor-img"
             loading="lazy"
           />
@@ -38,11 +38,11 @@ const MentorCart = ({ mentor }) => {
 
         <div className='opyt'>
           <div><h4>Опыт {mentor.workExperience}</h4></div>
-          <div><h4>Работает в ID {mentor.mentorId}</h4></div>
+          <div><h4>Работает в ID {mentor.id}</h4></div>
         </div>
 
         <div className='spec'>
-          <h4>{mentor.specializationName}</h4>
+          <h4>{mentor.specialty}</h4>
         </div>
 
         <p className='mentor-textp'>
@@ -55,7 +55,7 @@ const MentorCart = ({ mentor }) => {
           <p className="project-price">
             0 <span>C</span>
           </p>
-          <Link to={`/mentors-detail/${mentor.mentorId}`} className='btn'>
+          <Link to={`/mentors-detail/${mentor.id}`} className='btn'>
             <button>Технологии</button>
           </Link>
         </div>

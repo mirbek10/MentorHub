@@ -7,8 +7,6 @@ import { mentors } from './Data/Data';
 import { IoPlayOutline } from "react-icons/io5";
 import { RiPlayReverseLargeLine } from "react-icons/ri";
 
-// import "swiper/css";
-// import "swiper/css/pagination";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -81,6 +79,9 @@ const Mentor = () => {
         1024: {
           slidesPerView: 3.1, 
         },
+      }}
+      style={{
+        height:"100%"
       }}
     >
       {mentors.map((mentor, index) => (

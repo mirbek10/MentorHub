@@ -1,9 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import '../style.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
 import MentorCart from '../Mentor-cart/MentorCart';
-import { mentors } from '../Data/Data'; 
 import { IoPlayOutline } from "react-icons/io5";
 import { RiPlayReverseLargeLine } from "react-icons/ri";
 import { useSelector, useDispatch } from 'react-redux';
