@@ -1,0 +1,239 @@
+
+.cards-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+  .Mentor {
+    margin: 0 auto;
+    max-width: 1280px;
+    height: 750px;
+    padding-bottom: 30px;
+    .item-mentor{
+        margin: 0 auto;
+        width: 100%;
+        height: 56px;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        h1{
+            font-family: Jost;
+font-weight: 700;
+font-size: 32px;
+line-height: 40px;
+letter-spacing: 0px;
+
+        }
+    div{
+        display: flex;
+        width: 340;
+height: 56;
+gap: 15px;
+h4{
+  padding: 17px 20px;
+  border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    font-family: Jost;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    
+}
+ button:nth-child(2){
+     display: flex;
+     flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 900;
+    width: 56px;
+    height: 56px;cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #2D2D2D;
+ }
+ button:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 900;
+    width: 56px;
+    height: 56px;cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #2D2D2D;
+ }
+    } 
+    }
+  }
+ .swiper{
+    gap: 20px !important;
+    margin-top: 20px;
+    padding-bottom: 30px !important;
+    
+ } 
+.Mentors {
+     position: relative;
+    right: -18px;
+    bottom: 0px;
+    margin: 0 auto;
+    max-width: 1240px;
+    height: 100%;
+    padding-bottom: 10px;
+    .swiper {
+      width: 100%; /* ширина swiper */
+      padding: 10px 0; /* отступы по вертикали */
+    }
+  
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .swiper-button-next, .swiper-button-prev {
+      background-color: #000; /* Цвет кнопок навигации */
+      border-radius: 50%;
+      padding: 10px;
+      color: #fff;
+    }
+  
+    .swiper-pagination-bullet {
+      background-color: #000; /* Цвет пагинации */
+    }
+  }
+  
+  .item-mentor h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .mentor-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  h4 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  @media (max-width: 768px) {
+    
+    .swiper-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  @media (max-width: 770px) {
+    .swiper-slide {
+      width: 100% !important;
+      // background-color: red;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .item-mentor-btn{
+      display: block !important;
+      button{
+        display: block !important;
+      }
+    }
+    .mentor-btn button{
+      color: white;
+    }
+  .Mentor .item-mentor div h4 {
+          display: none;
+        }
+    // .swiper{
+
+    // }
+    .cards-wrapper {
+      flex-direction: column;
+    }
+    .mentor-cart{
+      // max-width: 380px !important;
+      // height: 583px !important;
+      p, h1, h2, h3, h4, h5, h6 {
+        letter-spacing: -0.2px;
+        font-size:13px !important;
+      }
+      span {
+        letter-spacing: -0.9px;
+        font-size: 20px;
+      }
+      .btn-price{
+
+        button{
+           letter-spacing: -0.2px;
+          font-size: 18px !important;
+          background-color: #2D2D2D;
+          color: white !important;
+          border-radius: 60px !important;
+          padding: 12px 24px !important;
+        }
+      }
+    }
+
+  }
+ 
+  .mentor-grid {
+    display: grid;
+    // height: 1 !important;
+    // padding-bottom: 20px;
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr); 
+    overflow-x: scroll; 
+  }
+  
+  .item-mentor-btn{
+  z-index: 100;
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+   button{
+    width: 100%;
+    height: 100%;
+    font-family: Jost;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    
+   }
+   &:hover{
+    background-color: rgb(33, 31, 31);
+   }
+  }
+  @media (min-width: 480px) {
+    .item-mentor-btn{
+      display: none;
+    }
+  }
+  .mentor-slide {
+  transition: transform 0.3s ease;
+}
+
+.small-card {
+  transform: scale(0.85) translateX(20px); // кичине жана оңго жылып турат
+  opacity: 0.6;
+  z-index: 0; // картанын артында болгондой кылат
+}

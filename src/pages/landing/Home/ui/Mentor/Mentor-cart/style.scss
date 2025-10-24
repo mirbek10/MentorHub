@@ -1,0 +1,146 @@
+.mentor-cart {
+  margin: 10px auto;
+  max-width: 360px; // карточка туура көлөмдө
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 5px 14px rgba(118, 117, 117, 0.5);
+  overflow: hidden;
+  font-family: 'Jost', sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  .mentor-logo {
+    width: 100%;
+    height: 260px;
+    background-color: #D7DFE9;
+    border-radius: 24px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 24px;
+      transform: scale(1); // 1.4 алып салдык
+      transition: transform 0.3s ease;
+    }
+
+    .mentor-rating {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      padding: 6px 12px;
+      background: #fff;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .mentor-btn {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+
+      button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #212121;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 18px;
+
+        &:hover {
+          background-color: #636363;
+        }
+      }
+    }
+  }
+
+  .item-m-cart {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #000;
+    }
+
+    p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .opyt,
+    .spec {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+
+      div {
+        background-color: #D5F6ED;
+        border-radius: 22px;
+        padding: 6px 12px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: #E2DBFA;
+        }
+      }
+    }
+
+    .btn-price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 12px;
+
+      .project-price {
+        font-weight: 700;
+        font-size: 18px;
+        color: #23afce;
+        span {
+          text-decoration: underline;
+        }
+      }
+
+      button {
+        background-color: #2d2d2d;
+        color: #fff;
+        padding: 10px 16px;
+        border-radius: 12px;
+        font-weight: 700;
+        font-size: 16px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #636363;
+        }
+      }
+    }
+  }
+}
+
+// Адаптив
+@media (max-width: 768px) {
+  .mentor-cart {
+    max-width: 100%;
+  }
+}
