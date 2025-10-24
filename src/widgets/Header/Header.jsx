@@ -2,19 +2,19 @@
 
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import glaw1 from "../../assets/glaw1.svg"
-import glaw2 from "../../assets/glaw2.svg"
-import glaw3 from "../../assets/glaw3.svg"
-import glaw4 from "../../assets/glaw4.svg"
-import md from "../../assets/md.svg"
+import glaw1 from "../../../public/assets/glaw1.svg"
+import glaw2 from "../../../public/assets/glaw2.svg"
+import glaw3 from "../../../public/assets/glaw3.svg"
+import glaw4 from "../../../public/assets/glaw4.svg"
+import md from "../../../public/assets/md.svg"
 import { Menu, X } from "lucide-react"
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
-import play1 from "../../assets/play1.svg"
-import img from "../../assets/img.png";
-import x11 from "../../assets/x11.svg";
+import play1 from "../../../public/assets/play1.svg"
+// import img from "../../../public/assets/img.svg";
+import x11 from "../../../public/assets/x11.svg";
 
 export default function Header() {
     const [activeMenu, setActiveMenu] = useState("Главная")

@@ -1,8 +1,8 @@
-import logo from "../../assets/logo.svg";
-import face1 from "../../assets/face1.svg";
-import face2 from "../../assets/face2.svg";
-import face3 from "../../assets/face3.svg";
-import face4 from "../../assets/face4.svg";
+import logo from "../../../public/assets/logo.svg";
+import face1 from "../../../public/assets/face1.svg";
+import face2 from "../../../public/assets/face2.svg";
+import face3 from "../../../public/assets/face3.svg";
+import face4 from "../../../public/assets/face4.svg";
 
 const Footer = () => {
     return (
