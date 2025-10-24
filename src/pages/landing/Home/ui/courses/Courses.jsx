@@ -216,14 +216,13 @@ const Courses = () => {
                 {windowWidth >= 768 ? (
                     <Swiper
                         modules={[Navigation]}
-                        spaceBetween={0}
+                        spaceBetween={20}
                         slidesPerView={getSlidesPerView()}
                         navigation={{
                             prevEl: ".swiper-button-prev-courses",
                             nextEl: ".swiper-button-next-courses",
                         }}
-                        className="courses-swiper w-full"
-                        onSlideChange={() => logAction("Slide changed")}
+                        className="courses-swiper w-full h-[560px]"
                     >
                         {courses.map((course) => (
                             <SwiperSlide key={course.id}>
@@ -232,22 +231,18 @@ const Courses = () => {
                         ))}
                     </Swiper>
                 ) : (
-                    <div className="flex flex-col gap-6">
+                    <Swiper
+                        modules={[]}
+                        spaceBetween={16}
+                        slidesPerView={1.2}
+                        className="w-full py-4"
+                    >
                         {visibleCourses.map((course) => (
-                            <div
-                                key={course.id}>{renderCourseCard(course, logAction, toggleFavorite, favorites, openModal)}</div>
+                            <SwiperSlide key={course.id}>
+                                {renderCourseCard(course, logAction, toggleFavorite, favorites, openModal)}
+                            </SwiperSlide>
                         ))}
-                        {!showMore && courses.length > 3 && (
-                            <div className="mt-4 text-center">
-                                <button
-                                    className="text-gray-500 hover:text-black"
-                                    onClick={handleShowMore}
-                                >
-                                    Показать еще
-                                </button>
-                            </div>
-                        )}
-                    </div>
+                    </Swiper>
                 )}
             </div>
 
@@ -347,20 +342,20 @@ const renderCourseCard = (course, logAction, toggleFavorite, favorites, openModa
                     </div>
                     <div className="absolute right-2 bg-white rounded-md px-2 py-1"></div>
                     <div className="absolute w-[45px] bottom-2 mb-3 mr-5 w-[23px] right-1 flex flex-col gap-4">
-                        {/*<img*/}
-                        {/*    className="bg-black rounded-3xl p-3 hover:bg-[rgba(35,175,206,1)] transition-colors duration-300 cursor-pointer"*/}
-                        {/*    src={courl2}*/}
-                        {/*    alt="Course icon 1"*/}
-                        {/*    onClick={openModal}*/}
-                        {/*/>*/}
-                        {/*<img*/}
-                        {/*    className={`rounded-3xl p-3 transition-colors duration-300 cursor-pointer ${*/}
-                        {/*        isFavorite ? "bg-[rgba(35,175,206,1)]" : "bg-black"*/}
-                        {/*    } hover:bg-[rgba(35,175,206,1)]`}*/}
-                        {/*    src={courl3}*/}
-                        {/*    alt="Course icon 2"*/}
-                        {/*    onClick={() => toggleFavorite(course.id)}*/}
-                        {/*/>*/}
+                        <img
+                            className="bg-black rounded-3xl p-3 hover:bg-[rgba(35,175,206,1)] transition-colors duration-300 cursor-pointer"
+                            src={courl2}
+                            alt="Course icon 1"
+                            onClick={openModal}
+                        />
+                        <img
+                            className={`rounded-3xl p-3 transition-colors duration-300 cursor-pointer ${
+                                isFavorite ? "bg-[rgba(35,175,206,1)]" : "bg-black"
+                            } hover:bg-[rgba(35,175,206,1)]`}
+                            src={courl3}
+                            alt="Course icon 2"
+                            onClick={() => toggleFavorite(course.id)}
+                        />
                     </div>
                 </div>
             </div>

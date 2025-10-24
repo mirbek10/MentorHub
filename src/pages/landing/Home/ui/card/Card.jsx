@@ -16,7 +16,7 @@ const tags = [
 
 const Card = () => {
   return (
-    <div className="container mx-auto px-4 mt-[60px]">
+    <div className="container mx-auto px-4 mt-[60px] h-[130px]">
       <Swiper
         modules={[Autoplay]}
         spaceBetween={40}
@@ -33,11 +33,12 @@ const Card = () => {
           640: { slidesPerView: 2.2 },
           0: { slidesPerView: 2 }, // 📱 Телефон — 2 карточка гана
         }}
+        className="my-swiper"
       >
         {tags.map((tag, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} className=''>
             <div
-              className="tag-card w-[220px] h-[104px] font-bold text-[20px] rounded-[30px] shadow-lg transition hover:scale-105 flex items-center justify-center"
+              className="tag-card w-[220px] h-[104px] font-bold text-[20px] rounded-[30px] shadow-lg transition hover:scale-105 flex items-center justify-center div"
               style={{ border: `2px solid ${tag.color}` }}
             >
               {tag.text}
