@@ -1,0 +1,18 @@
+<svg width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip7_66369">
+			<rect id="Huge-icon/interface/bulk/board" rx="0.000000" width="19.000000" height="19.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip7_66369)">
+		<path id="Vector 481 (Stroke)" d="M6.94 14.17L4.72 18.61C4.57 18.92 4.19 19.04 3.88 18.89C3.57 18.73 3.45 18.36 3.6 18.05L5.54 14.17L6.94 14.17ZM14.45 14.17L16.39 18.05C16.54 18.36 16.42 18.73 16.11 18.89C15.8 19.04 15.42 18.92 15.27 18.61L13.05 14.17C13.05 14.17 14.39 14.17 14.45 14.17ZM10.62 14.17L10.62 16.66C10.62 17.01 10.34 17.29 10 17.29C9.65 17.29 9.37 17.01 9.37 16.66L9.37 14.17L10.62 14.17Z" fill="#2D2D2D" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<g opacity="0.400000">
+			<path id="Rectangle 131" d="M15.33 14.16L4.66 14.16C3 14.16 1.66 12.82 1.66 11.16L1.66 4.66C1.66 3 3 1.66 4.66 1.66L15.33 1.66C16.99 1.66 18.33 3 18.33 4.66L18.33 11.16C18.33 12.82 16.99 14.16 15.33 14.16Z" fill="#2D2D2D" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+		<path id="Vector 2513 (Stroke)" d="M5.2 5.83C5.2 5.48 5.48 5.2 5.83 5.2L14.16 5.2C14.51 5.2 14.79 5.48 14.79 5.83C14.79 6.17 14.51 6.45 14.16 6.45L5.83 6.45C5.48 6.45 5.2 6.17 5.2 5.83Z" fill="#2D2D2D" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Vector 2514 (Stroke)" d="M5.2 10C5.2 9.65 5.48 9.37 5.83 9.37L10 9.37C10.34 9.37 10.62 9.65 10.62 10C10.62 10.34 10.34 10.62 10 10.62L5.83 10.62C5.48 10.62 5.2 10.34 5.2 10Z" fill="#2D2D2D" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>
