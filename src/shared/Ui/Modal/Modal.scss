@@ -1,0 +1,113 @@
+$modal-bg: #222224;
+$overlay-bg: rgba(0, 0, 0, 0.5);
+$border-radius: 8px;
+$modal-padding: 20px;
+$title-font-size: 1.5rem;
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $overlay-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  color: black;
+}
+
+.modal-content {
+  background: $modal-bg;
+  border-radius: $border-radius;
+  max-width: 1000px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 40px 55px ;
+  box-sizing: border-box;
+  scrollbar-width: none;
+
+  &.modal-delete{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    height: 100px;
+    .modal-header{
+      display: none;
+    }
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $modal-padding;
+
+    .modal-title {
+      margin: 0;
+      font-size: $title-font-size;
+    }
+
+    .modal-close {
+      background: none;
+      border: none;
+      font-size: $title-font-size;
+      cursor: pointer;
+      padding: 0 10px;
+    }
+  }
+
+  .modal-body {
+    padding: 10px 0;
+  }
+  input, textarea{
+    background: #131313;
+    border: 1px solid #BEBEBE;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    color: white;
+    &::placeholder{
+      color: #FFFFFFB8;
+    }
+  }
+  input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-bottom: 0; 
+    cursor: pointer;
+    background: #FE0404;
+    border: 1px solid #BEBEBE;
+    border-radius: 5px;
+  }
+  .modal-down-buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+    button{
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      color: white;
+      background-color:#FE0404;
+      font-size: 16px;
+      &:disabled{
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+      &:first-child{
+        background-color: #FE04044D;
+        color: #FFFFFFE5;
+      }
+    }
+  }
+}
