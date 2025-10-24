@@ -1,0 +1,95 @@
+.cards-6 {
+  overflow-x: scroll;
+
+  .cards-6-item {
+    display: flex;
+    gap: 20px;
+    width: 1300px;
+  }
+
+  // scroll полосасын жашыруу
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+// -----------------------------
+// Hero кнопкасы
+// -----------------------------
+.hero-btn {
+  background-color: black;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: #1a1a1a;
+    transform: scale(1.05);
+  }
+}
+
+// -----------------------------
+// Swiper карточкалары үчүн адаптив
+// -----------------------------
+.swiper {
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper-slide div {
+    width: 220px;
+    height: 104px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+// -----------------------------
+// Адаптив брейкпойнттар
+// -----------------------------
+@media (max-width: 1024px) {
+  .swiper-slide div {
+    width: 180px;
+    height: 90px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-slide div {
+    width: 160px;
+    height: 80px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .swiper-slide div {
+    width: 140px;
+    height: 70px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-slide div {
+    width: 120px;
+    height: 60px;
+    font-size: 14px;
+  }
+
+  .hero-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
