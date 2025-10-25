@@ -1,12 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../widgets/Layout/Layout";
 import Home from "../pages/landing/Home/Home.jsx";
-import Login from "../pages/Auth/Login/Login.jsx";
-import Register from "../pages/Auth/Register/Register.jsx";
 import Profile from "../pages/Profile/Profile.jsx";
 import NotFound from "../pages/NotFound/NotFound.jsx";
 import Mentor from "../pages/Mentor/Mentor.jsx";
 import Project from "../pages/landing/project/Project.jsx";
+import Register from "../pages/Auth/Register.jsx";
+import SigneIn from "../pages/Auth/SigneIn.jsx";
+import CoursesPage from "../pages/landing/kourses/Kourses.jsx";
+import CourseDetail from "../pages/landing/kourses/detail/DetailCurse.jsx";
 
 export const router = createBrowserRouter([
   {
@@ -14,7 +16,9 @@ export const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: "/", element: <Home /> },
-      {path:"/project", element:<Project/>}
+      { path: "/project", element: <Project /> },
+      { path: "/kours", element: <CoursesPage /> },
+      {path: "/koursdetail/:id", element: <CourseDetail />},
     ],
   },
   {
@@ -31,10 +35,10 @@ export const router = createBrowserRouter([
   },
   {
     path: "/login",
-    element: <Login />,
+    element: <SigneIn />,
   },
   {
-    path:"/mentor",
-    element:<Mentor/>
-  }
+    path: "/mentor",
+    element: <Mentor />,
+  },
 ]);
