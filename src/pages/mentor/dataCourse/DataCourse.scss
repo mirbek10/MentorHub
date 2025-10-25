@@ -1,0 +1,195 @@
+.datacourse {
+    margin: 80px auto;
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    // padding: 0 50px 50px;
+
+    .new {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .h {
+            display: flex;
+            gap: 20px;
+
+            p {
+                color: #000;
+                font-family: Jost;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 40px;
+                position: relative;
+
+
+            }
+
+            img {
+                width: 40px;
+                height: 40px;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .hBtn {
+            display: flex;
+            gap: 20px;
+
+            .i,
+            .b {
+                box-shadow: 0px 10px 32px -4px rgba(24, 39, 75, 0.15),
+                    0px 6px 14px -6px rgba(24, 39, 75, 0.2);
+                background: #ffd02c;
+                transition: all 0.3s ease;
+                cursor: pointer;
+
+                &:hover {
+                    background: #ffbe00;
+                    transform: translateY(-2px);
+                }
+            }
+
+            .i {
+                width: 54px;
+                height: 54px;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .b {
+                border-radius: 20px;
+                width: 214px;
+                height: 54px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 36px;
+                color: #000;
+                font-family: Mulish;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 120%;
+                padding-left: 80px;
+                text-align: center;
+            }
+
+            img {
+                object-fit: cover;
+                width: 44px;
+                height: 44px;
+            }
+        }
+    }
+
+    .newdata {
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        h2 {
+            color: #000;
+            font-family: Jost;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            position: relative;
+            padding-bottom: 6px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 60px;
+                height: 3px;
+                bottom: 0;
+                left: 0;
+                background-color: #ffd02c;
+                border-radius: 2px;
+            }
+        }
+
+        .category {
+            display: flex;
+            gap: 20px;
+
+            button {
+                width: 380px;
+                height: 54px;
+                border-radius: 20px;
+                background: rgb(250, 250, 250);
+                color: #000;
+                font-family: Jost;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 22px;
+                text-align: center;
+                border: 1px solid #ddd;
+                transition: background 0.3s, transform 0.2s;
+
+                &:hover {
+                    background: #fff4c2;
+                    transform: scale(1.02);
+                }
+
+                &.active {
+                    background: #ffd02c;
+                }
+            }
+        }
+
+        .list-input {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                h3 {
+                    color: #000;
+                    font-family: Jost;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 22px;
+                }
+
+                textarea {
+                    width: 100%;
+                    max-width: 1180px;
+                    height: 128px;
+                    border-radius: 12px;
+                    background: #fafafa;
+                    border: 1px solid #cfcfcf;
+                    outline: none;
+                    resize: none;
+                    color: #6f6d73;
+                    font-family: Jost;
+                    font-size: 16px;
+                    padding: 20px;
+                    transition: border 0.3s ease;
+
+                    &:focus {
+                        border-color: #ffd02c;
+                        background: #fffef8;
+                    }
+
+                    &::placeholder {
+                        color: #6f6d73;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

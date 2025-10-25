@@ -1,0 +1,573 @@
+.course {
+    width: 1280px;
+    height: 1258px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    margin: 0 auto;
+
+
+    .items {
+        display: none;
+    }
+
+
+
+
+    .navSlidebar {
+        width: 310px;
+        height: 832px;
+        background: rgb(250, 250, 250);
+        padding: 80px 50px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 239px;
+
+        .into {
+            width: 260px;
+            height: 445px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+
+
+            .logo {
+                display: flex;
+
+                img {
+                    width: 178px;
+                    height: 49px;
+                }
+            }
+
+            .item {
+                width: 260px;
+                height: 356px;
+
+                div {
+                    width: 261px;
+                    height: 56px;
+                    border-radius: 12px;
+                    display: flex;
+                    align-items: center;
+                    gap: 14.67px;
+                    padding-left: 12px;
+
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
+
+                    .img {
+                        display: none;
+                    }
+
+                    p {
+                        color: rgb(0, 0, 0);
+                        font-family: 'Jost', sans-serif;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 22px;
+                        letter-spacing: 0px;
+                    }
+                }
+
+                div:hover {
+                    width: 261px;
+                    height: 56px;
+                    border-radius: 12px;
+
+                    /* Brand/Black */
+                    background: rgb(45, 45, 45);
+                    cursor: pointer;
+
+                    .img {
+                        display: block;
+                    }
+
+                    img {
+                        display: none;
+                    }
+
+                    p {
+                        color: rgb(255, 255, 255);
+                        font-family: Jost;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 22px;
+                        letter-spacing: 0px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    .myPanel {
+
+
+
+
+
+
+        .myCoursesPanel {
+            padding: 80px 40px;
+            display: flex;
+            gap: 20px;
+
+            .search {
+                display: flex;
+                align-items: center;
+                width: 639px;
+                height: 54px;
+                border-radius: 20px;
+
+                /* Secondary/Write */
+                background: rgb(250, 250, 250);
+                justify-content: space-between;
+                padding: 0 25px;
+
+                input {
+                    width: 560px;
+                    height: 24p;
+                    font-size: 20px;
+                    font-weight: 500;
+                    border: none;
+                    border-bottom: 1px solid #ccc;
+                    background: none;
+                    outline: none;
+                    color: rgb(111, 109, 115);
+
+
+                    &::placeholder {
+                        /* Subtitle/20 Medium */
+                        color: rgb(111, 109, 115);
+                        font-family: Jost;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        letter-spacing: 0px;
+
+                    }
+
+
+                }
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+
+                .underline {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 1px;
+                    width: 150px;
+                    background-color: #ccc;
+                }
+            }
+
+            .total {
+                display: flex;
+                gap: 20px;
+
+                .btn {
+                    width: 157px;
+                    height: 54px;
+                    border-radius: 20px;
+                    /* Brand/Black */
+                    background: rgb(45, 45, 45);
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+
+                    p {
+                        /* Subtitle/16 Bold */
+                        color: rgb(255, 255, 255);
+                        font-family: Mulish;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 120%;
+                        letter-spacing: 0px;
+                        padding-left: 34px;
+                    }
+
+                    img {
+                        width: 44px;
+                        height: 44px;
+                    }
+                }
+
+                .img {
+                    img {
+                        width: 44px;
+                        height: 44px;
+                    }
+                }
+
+
+
+
+            }
+
+
+
+
+        }
+
+        .box {
+            padding: 25px 40px;
+            display: flex;
+            justify-content: space-between;
+
+            .btn-box {
+                display: flex;
+                gap: 10px;
+
+
+
+                button {
+                    width: 62px;
+                    height: 42px;
+                    border-radius: 32px;
+
+                    /* Brand/Black */
+                    background: rgb(250, 250, 250);
+                    /* Subtitle/18 Bold */
+
+                    color: rgb(111, 109, 115);
+                    font-family: Jost;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 22px;
+                    letter-spacing: 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                button:hover {
+                    color: rgb(255, 255, 255);
+                    background: rgb(45, 45, 45);
+
+                }
+            }
+
+            .icon-box {
+                display: flex;
+                gap: 10px;
+
+                button {
+                    width: 64px;
+                    height: 44px;
+                    border-radius: 32px;
+
+                    /* 1 */
+                    box-shadow: 0px 10px 32px -4px rgba(24, 39, 75, 0.1), 0px 6px 14px -6px rgba(24, 39, 75, 0.12);
+                    /* Brand/Black */
+                    background: rgb(45, 45, 45);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+    .course {
+        width: 768px;
+        height: 1898px;
+        background: rgb(255, 255, 255);
+        // margin: 0 auto;
+        padding: 0;
+        display: block;
+
+        
+
+        .items {
+            padding-top: 0px;
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            flex-wrap: nowrap;
+
+            div {
+                flex: 0 0 auto;
+                width: 170px;
+                height: 56px;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                gap: 14.67px;
+                padding-left: 12px;
+                background: rgb(250, 250, 250);
+
+                img {
+                    width: 32px;
+                    height: 32px;
+                }
+
+                .img {
+                    display: none;
+                }
+
+                p {
+                    color: rgb(0, 0, 0);
+                    font-family: 'Jost', sans-serif;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 22px;
+                    letter-spacing: 0px;
+                }
+            }
+
+            div:hover {
+                background: rgb(45, 45, 45);
+                cursor: pointer;
+
+                .img {
+                    display: block;
+                }
+
+                img {
+                    display: none;
+                }
+
+                p {
+                    color: rgb(255, 255, 255);
+                    font-family: Jost;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 22px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                }
+            }
+
+            div.d {
+                width: 220px;
+            }
+        }
+
+        .items::-webkit-scrollbar {
+            display: none;
+        }
+
+
+
+
+
+        .navSlidebar {
+            display: none;
+        }
+
+        .myPanel {
+
+
+
+
+
+
+            .myCoursesPanel {
+                padding: 0;
+                padding-top: 48px;
+                display: flex;
+                gap: 20px;
+
+                .search {
+                    display: flex;
+                    align-items: center;
+                    width: 551px;
+                    height: 54px;
+                    border-radius: 20px;
+
+                    /* Secondary/Write */
+                    background: rgb(250, 250, 250);
+                    justify-content: space-between;
+                    padding: 0 25px;
+
+                    input {
+                        width: 560px;
+                        height: 24p;
+                        font-size: 20px;
+                        font-weight: 500;
+                        border: none;
+                        border-bottom: 1px solid #ccc;
+                        background: none;
+                        outline: none;
+                        color: rgb(111, 109, 115);
+
+
+                        &::placeholder {
+                            /* Subtitle/20 Medium */
+                            color: rgb(111, 109, 115);
+                            font-family: Jost;
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 24px;
+                            letter-spacing: 0px;
+
+                        }
+
+
+                    }
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+
+                    .underline {
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        height: 1px;
+                        width: 150px;
+                        background-color: #ccc;
+                    }
+                }
+
+                .total {
+                    display: flex;
+                    gap: 20px;
+
+                    .btn {
+                        width: 157px;
+                        height: 54px;
+                        border-radius: 20px;
+                        /* Brand/Black */
+                        background: rgb(45, 45, 45);
+                        display: flex;
+                        align-items: center;
+                        gap: 16px;
+
+                        p {
+                            /* Subtitle/16 Bold */
+                            color: rgb(255, 255, 255);
+                            font-family: Mulish;
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 120%;
+                            letter-spacing: 0px;
+                            padding-left: 34px;
+                        }
+
+                        img {
+                            width: 44px;
+                            height: 44px;
+                        }
+                    }
+
+                    .img {
+                        display: none;
+                    }
+
+
+
+
+                }
+
+
+
+
+            }
+
+            .box {
+                padding: 33px 0;
+                display: flex;
+                justify-content: space-between;
+
+                .btn-box {
+                    display: flex;
+                    gap: 10px;
+
+
+
+                    button {
+                        width: 73px;
+                        height: 42px;
+                        border-radius: 32px;
+
+                        /* Brand/Black */
+                        background: rgb(250, 250, 250);
+                        /* Subtitle/18 Bold */
+
+                        /* Subtitle/18 Bold */
+                        color: rgb(111, 109, 115);
+                        font-family: Jost;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 22px;
+                        letter-spacing: 0px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    button:hover {
+                        color: rgb(255, 255, 255);
+                        background: rgb(45, 45, 45);
+
+                    }
+                }
+
+                .icon-box {
+                    display: flex;
+                    gap: 10px;
+
+                    button {
+                        width: 64px;
+                        height: 44px;
+                        border-radius: 32px;
+
+                        /* 1 */
+                        box-shadow: 0px 10px 32px -4px rgba(24, 39, 75, 0.1), 0px 6px 14px -6px rgba(24, 39, 75, 0.12);
+                        /* Brand/Black */
+                        background: rgb(45, 45, 45);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        img {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                }
+            }
+
+
+
+
+
+
+
+        }
+
+
+
+    }
+}
