@@ -5,10 +5,12 @@ import Reviews from "./ui/reviews/Reviews";
 import Hero2 from "./ui/hero2/Hero2";
 import Banner from "./ui/banner/Banner";
 import ContactForm from "./ui/ContactForm/ContactForm";
+import MyPurchases from "../../Profile/myPurchases/MyPurchases.jsx";
 
 function Home() {
   return (
     <div>
+        <MyPurchases/>
       <Banner />
       <Card />
       <Hero2 />

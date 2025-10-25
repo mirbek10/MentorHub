@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+  .title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2D2D2D;
+    margin: 40px 0 30px;
+  }
+
+.filter {
+  display: flex;
+  gap: 12px;
+
+  .btn {
+    max-width: 580px;
+    width: 100%;
+    height: 64px;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: #FAFAFA;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: #FFD02C;
+      color: #2D2D2D;
+    }
+
+    &.active {
+      background-color: #FFD02C;
+      color: #2D2D2D;
+    }
+
+    &:active {
+      transform: scale(0.97);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+    font-width: 600;
+  }
+  .filter {
+    .btn {
+      height: 40px;
+      border-radius: 5px;
+    }
+  }
+}
