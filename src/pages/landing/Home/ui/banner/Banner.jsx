@@ -48,7 +48,7 @@ const Banner = () => {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div
-              className="w-[1180px] h-[432px] p-6 rounded-[24px] transition-all duration-300"
+              className="w-full h-auto p-6 rounded-[24px] transition-all duration-300"
               style={{ backgroundColor: slide.bg }}
             >
               <h6 className="text-[24px] font-medium font-jost text-center text-[#333] mt-[66px]">
