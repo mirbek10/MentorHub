@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import {createBrowserRouter} from "react-router-dom";
 import Layout from "../widgets/Layout/Layout";
 import Home from "../pages/landing/Home/Home.jsx";
 import Profile from "../pages/Profile/Profile.jsx";
@@ -10,6 +10,7 @@ import Register from "../pages/Auth/Register.jsx";
 import SigneIn from "../pages/Auth/SigneIn.jsx";
 import CoursesPage from "../pages/landing/kourses/Kourses.jsx";
 import CourseDetail from "../pages/landing/kourses/detail/DetailCurse.jsx";
+import MentorList from "../pages/landing/mentor/MentorList.jsx";
 import MentorProfile from "../widgets/Layout/MentorLayout.jsx";
 import ProfileMentor from "../pages/mentor/mentorProfileComponents/ProfileMentor.jsx";
 import ChangeMentorInfo from "../pages/mentor/ChangeMentorInfo/ChangeMentorinfo.jsx";
@@ -20,41 +21,43 @@ import DataCourse from "../pages/mentor/dataCourse/DataCourse.jsx";
 import VideoLesson from "../pages/mentor/VideoLesson/VidioLesson.jsx";
 
 export const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout />,
-    children: [
-      { path: "/", element: <Home /> },
-      {path:"/mentorpage", element: <MentorPage/>},
-      { path: "/project", element: <Project /> },
-      { path: "/kours", element: <CoursesPage /> },
-      {path: "/koursdetail/:id", element: <CourseDetail />},
-      {path:"/history",element:<HistoryPage/>}
-    ],
-  },
-  {
-    path: "*",
-    element: <NotFound />,
-  },
-  {
-    path: "/register",
-    element: <Register />,
-  },
-  {
-    path: "/profile",
-    element: <Profile />,
-  },
-  {
-    path: "/login",
-    element: <SigneIn />,
-  },
-  {
-    path: "/mentor",
-    element: <Mentor />,
-  },
-   {
+    {
+        path: "/",
+        element: <Layout/>,
+        children: [
+            {path: "/", element: <Home/>},
+            {path: "/mentorpage", element: <MentorPage/>},
+            {path: "/project", element: <Project/>},
+            {path: "/kours", element: <CoursesPage/>},
+            {path: "/koursdetail/:id", element: <CourseDetail/>},
+            {path: "/mentor-list", element: <MentorList/>},
+            {path: "/mentor-detail/:id", element: <MentorPage/>},
+            {path: "/history", element: <HistoryPage/>}
+        ],
+    },
+    {
+        path: "*",
+        element: <NotFound/>,
+    },
+    {
+        path: "/register",
+        element: <Register/>,
+    },
+    {
+        path: "/profile",
+        element: <Profile/>,
+    },
+    {
+        path: "/login",
+        element: <SigneIn/>,
+    },
+    {
+        path: "/mentor",
+        element: <Mentor/>,
+    },
+    {
         path: '/mentorProfile',
-        element: <MentorProfile />,
+        element: <MentorProfile/>,
         children: [
             // { index: true, element: <Navigate to="profile" replace /> },
             { path: 'profile', element: <ProfileMentor /> },
@@ -69,5 +72,12 @@ export const router = createBrowserRouter([
                { path: '/videolesson', element: <VideoLesson /> },
 
 
+            {path: 'profile', element: <ProfileMentor/>},
+            // { path: 'course', element: <Course /> },
+            // { path: "technology", element: <Technology /> },
+
+        ]
+    },
+    {path: '/ChangeInfoMentor', element: <ChangeMentorInfo/>}
 
 ]);

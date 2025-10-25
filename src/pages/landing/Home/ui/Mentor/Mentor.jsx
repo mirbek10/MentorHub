@@ -35,7 +35,7 @@ const Mentor = () => {
   };
 
   return (
-    <div className='Mentor'>
+    <div className='Mentor px-4 py-8'>
       <div className='container item-mentor'>
         <h1>Менторы</h1>
         <div className="mentor-controls">
@@ -57,7 +57,7 @@ const Mentor = () => {
         {isMobile ? (
       <Swiper
       onSwiper={(swiper) => (swiperRef.current = swiper)}
-      spaceBetween={1}
+      spaceBetween={20}
       slidesPerView={3.1} 
       slidesPerGroup={1}
       centeredSlides={false} 
