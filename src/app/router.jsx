@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import {createBrowserRouter} from "react-router-dom";
 import Layout from "../widgets/Layout/Layout";
 import Home from "../pages/landing/Home/Home.jsx";
 import Profile from "../pages/Profile/Profile.jsx";
@@ -17,51 +17,51 @@ import ChangeMentorInfo from "../pages/mentor/ChangeMentorInfo/ChangeMentorinfo.
 import HistoryPage from "../pages/landing/history/HistoryPage.jsx";
 
 export const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout />,
-    children: [
-      { path: "/", element: <Home /> },
-      {path:"/mentorpage", element: <MentorPage/>},
-      { path: "/project", element: <Project /> },
-      { path: "/kours", element: <CoursesPage /> },
-      {path: "/koursdetail/:id", element: <CourseDetail />},
-      {path: "/mentor-list", element: <MentorList />},
-      {path:"/mentor-detail/:id", element: <MentorPage/>},
-      {path:"/history",element:<HistoryPage/>}
-    ],
-  },
-  {
-    path: "*",
-    element: <NotFound />,
-  },
-  {
-    path: "/register",
-    element: <Register />,
-  },
-  {
-    path: "/profile",
-    element: <Profile />,
-  },
-  {
-    path: "/login",
-    element: <SigneIn />,
-  },
-  {
-    path: "/mentor",
-    element: <Mentor />,
-  },
-   {
+    {
+        path: "/",
+        element: <Layout/>,
+        children: [
+            {path: "/", element: <Home/>},
+            {path: "/mentorpage", element: <MentorPage/>},
+            {path: "/project", element: <Project/>},
+            {path: "/kours", element: <CoursesPage/>},
+            {path: "/koursdetail/:id", element: <CourseDetail/>},
+            {path: "/mentor-list", element: <MentorList/>},
+            {path: "/mentor-detail/:id", element: <MentorPage/>},
+            {path: "/history", element: <HistoryPage/>}
+        ],
+    },
+    {
+        path: "*",
+        element: <NotFound/>,
+    },
+    {
+        path: "/register",
+        element: <Register/>,
+    },
+    {
+        path: "/profile",
+        element: <Profile/>,
+    },
+    {
+        path: "/login",
+        element: <SigneIn/>,
+    },
+    {
+        path: "/mentor",
+        element: <Mentor/>,
+    },
+    {
         path: '/mentorProfile',
-        element: <MentorProfile />,
+        element: <MentorProfile/>,
         children: [
             // { index: true, element: <Navigate to="profile" replace /> },
-            { path: 'profile', element: <ProfileMentor /> },
+            {path: 'profile', element: <ProfileMentor/>},
             // { path: 'course', element: <Course /> },
             // { path: "technology", element: <Technology /> },
-            
-          ]
-        },
-        {path:'/ChangeInfoMentor',element:<ChangeMentorInfo/>}
+
+        ]
+    },
+    {path: '/ChangeInfoMentor', element: <ChangeMentorInfo/>}
 
 ]);

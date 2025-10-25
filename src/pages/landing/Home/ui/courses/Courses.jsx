@@ -397,7 +397,10 @@ const renderCourseCard = (course, logAction, toggleFavorite, favorites, openModa
                     <span className="font-bold text-2xl ml-2">{course.price}</span>
                     <button
                         className="bg-gray-800 text-white px-6 py-4 rounded-[21px] font-bold text-[16px] mr-4 transition-colors duration-300 ease-in-out hover:bg-gray-700"
-                        onClick={() => navigate('/cours')}
+                        onClick={() => {
+                            // logAction(`Details button clicked for course ${course.id}`)
+                            navigate("/koursdetail/" + course.id)
+                        }}
                     >
                         Подробно
                     </button>
