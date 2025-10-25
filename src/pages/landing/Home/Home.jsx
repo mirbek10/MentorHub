@@ -4,6 +4,7 @@ import Card from "./ui/card/Card";
 import Reviews from "./ui/reviews/Reviews";
 import Hero2 from "./ui/hero2/Hero2";
 import Banner from "./ui/banner/Banner";
+import ContactForm from "./ui/ContactForm/ContactForm";
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <Hero2 />
       <Mentor/>
       <Reviews/>
+      <ContactForm/>
     </div>
   );
 }
