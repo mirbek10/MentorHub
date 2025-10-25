@@ -1,0 +1,18 @@
+<svg width="44.000000" height="44.000000" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip2_62771">
+			<rect id="Huge-icon/interface/bulk/add-circle" rx="0.000000" width="23.000000" height="23.000000" transform="translate(10.500000 10.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Icon" rx="15.500000" width="43.000000" height="43.000000" transform="translate(0.500000 0.500000)" fill="#FAFAFA" fill-opacity="1.000000"/>
+	<rect id="Component 5" rx="0.000000" width="23.000000" height="23.000000" transform="translate(10.500000 10.500000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip2_62771)">
+		<g opacity="0.400000">
+			<path id="Vector 280" d="M32 22C32 27.52 27.52 32 22 32C16.47 32 12 27.52 12 22C12 16.47 16.47 12 22 12C27.52 12 32 16.47 32 22Z" fill="#2D2D2D" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+		<path id="Union" d="M22.75 18C22.75 17.5859 22.4141 17.25 22 17.25C21.5859 17.25 21.25 17.5859 21.25 18L21.25 21.25L18 21.25C17.5859 21.25 17.25 21.5859 17.25 22C17.25 22.4141 17.5859 22.75 18 22.75L21.25 22.75L21.25 26C21.25 26.4141 21.5859 26.75 22 26.75C22.4141 26.75 22.75 26.4141 22.75 26L22.75 22.75L26 22.75C26.4141 22.75 26.75 22.4141 26.75 22C26.75 21.5859 26.4141 21.25 26 21.25L22.75 21.25L22.75 18Z" clip-rule="evenodd" fill="#2D2D2D" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>

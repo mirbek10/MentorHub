@@ -1,8 +1,9 @@
-import logo from "../../assets/logo.svg";
-import face1 from "../../assets/face1.svg";
-import face2 from "../../assets/face2.svg";
-import face3 from "../../assets/face3.svg";
-import face4 from "../../assets/face4.svg";
+import logo from "../../../public/assets/logo.svg";
+import face1 from "../../../public/assets/face1.svg";
+import face2 from "../../../public/assets/face2.svg";
+import face3 from "../../../public/assets/face3.svg";
+import face4 from "../../../public/assets/face4.svg";
+import Logo from "../../shared/Ui/logo/Logo";
 
 const Footer = () => {
     return (
@@ -21,7 +22,7 @@ const Footer = () => {
 
                         <div className="flex flex-col items-center py-4 mb-6">
                             <div className="flex items-center mb-4">
-                                <img src={logo} alt="Логотип"/>
+                                <Logo/>
                             </div>
                             <div className="flex space-x-3">
                                 <img src={face1} alt="Соцсеть 1"/>
@@ -58,7 +59,7 @@ const Footer = () => {
 
                         <div className="flex flex-col items-center py-4 mb-6">
                             <div className="flex items-center mb-4">
-                                <img src={logo} alt="Логотип"/>
+                                <Logo/>
                             </div>
                             <div className="flex space-x-3">
                                 <img src={face1} alt="Соцсеть 1"/>

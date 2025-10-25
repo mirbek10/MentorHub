@@ -1,0 +1,99 @@
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 260px;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 1000;
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        transition: left 0.3s ease;
+        overflow: auto;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+        &.open {
+            left: 0;
+        }
+
+        .logo-block {
+            margin-bottom: 20px;
+        }
+
+        .back-button {
+            margin-top: auto;
+        }
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: "Jost", sans-serif;
+
+        &__box {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            color: #000;
+            font-weight: 900;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            transform-style: preserve-3d;
+
+            &--yellow {
+                background: linear-gradient(135deg, #FFD233, #FFF1A0);
+                box-shadow:
+                    0 0 12px rgba(255, 210, 51, 0.4),
+                    0 4px 20px rgba(255, 210, 51, 0.2);
+            }
+
+            &--dark {
+                background: linear-gradient(135deg, #2D2D2D, #000);
+                color: #fff;
+                box-shadow:
+                    0 0 12px rgba(255, 255, 255, 0.1),
+                    0 4px 20px rgba(0, 0, 0, 0.4);
+            }
+
+            &:hover {
+                transform: perspective(500px) rotateX(10deg) rotateY(-10deg) scale(1.05);
+                box-shadow:
+                    0 0 15px rgba(255, 255, 255, 0.3),
+                    0 0 30px rgba(255, 255, 255, 0.2),
+                    0 10px 25px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+            position: relative;
+
+            &--top {
+                font-size: 22px;
+                font-weight: 700;
+                color: #2D2D2D;
+                letter-spacing: 0.5px;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            }
+
+            &--bottom {
+                font-size: 14px;
+                font-weight: 500;
+                color: #6F6D73;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+    }

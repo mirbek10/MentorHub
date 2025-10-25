@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Сары сектор -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="yellow" stroke-width="20" stroke-dasharray="120, 360" stroke-dashoffset="0"/>
+  
+  <!-- Кара сектор -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="black" stroke-width="20" stroke-dasharray="120, 360" stroke-dashoffset="120"/>
+  
+  <!-- Көк сектор -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="blue" stroke-width="20" stroke-dasharray="120, 360" stroke-dashoffset="20"/>
+</svg>
