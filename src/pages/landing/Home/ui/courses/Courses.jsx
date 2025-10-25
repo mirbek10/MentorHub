@@ -12,11 +12,12 @@ import strel from "../../../../../../public/assets/strel.svg";
 import strel2 from "../../../../../../public/assets/strel2.svg";
 import strel3 from "../../../../../../public/assets/strel3.svg";
 import smile from "../../../../../../public/assets/img/Smile_rating.svg";
-import {Link} from "react-router-dom";
+import {Link, Navigate, useNavigate} from "react-router-dom";
 import x11 from "../../../../../../public/assets/x11.svg";
 import like11 from "../../../../../../public/assets/like11.svg";
 
 const Courses = () => {
+    const navigate = useNavigate()
     const [windowWidth, setWindowWidth] = useState(
         typeof window !== "undefined" ? window.innerWidth : 0
     );
@@ -29,7 +30,6 @@ const Courses = () => {
         return [];
     });
     const [isModalOpen, setIsModalOpen] = useState(false);
-
     const logAction = (action) => {
         console.log(`[${new Date().toISOString()}] User action: ${action}`);
     };
@@ -226,7 +226,7 @@ const Courses = () => {
                     >
                         {courses.map((course) => (
                             <SwiperSlide key={course.id}>
-                                {renderCourseCard(course, logAction, toggleFavorite, favorites, openModal)}
+                                {renderCourseCard(course, logAction, toggleFavorite, favorites, openModal, navigate)}
                             </SwiperSlide>
                         ))}
                     </Swiper>
@@ -310,7 +310,7 @@ const Courses = () => {
     );
 };
 
-const renderCourseCard = (course, logAction, toggleFavorite, favorites, openModal) => {
+const renderCourseCard = (course, logAction, toggleFavorite, favorites, openModal, navigate) => {
     const formatTitle = (title) => {
         const parts = title.split("UX/UI ");
         return (
@@ -397,7 +397,7 @@ const renderCourseCard = (course, logAction, toggleFavorite, favorites, openModa
                     <span className="font-bold text-2xl ml-2">{course.price}</span>
                     <button
                         className="bg-gray-800 text-white px-6 py-4 rounded-[21px] font-bold text-[16px] mr-4 transition-colors duration-300 ease-in-out hover:bg-gray-700"
-                        onClick={() => logAction(`Details button clicked for course ${course.id}`)}
+                        onClick={() => navigate('/cours')}
                     >
                         Подробно
                     </button>
