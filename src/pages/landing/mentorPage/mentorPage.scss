@@ -65,7 +65,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
 
     &:hover {
@@ -252,7 +252,7 @@
     color: #000;
     border-radius: 24px;
     padding: 24px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   }
 
   &__price {
@@ -298,3 +298,33 @@
   }
 }
 
+.mentor-page__details {
+
+  > h2 {
+    font-size: 20px;
+  }
+
+  .mentor-page__company {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-top: 10px;
+
+    > img {
+      width: 30px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.mentor-page__desc {
+  > h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+  }
+
+  > p {
+    color: black;
+  }
+}
