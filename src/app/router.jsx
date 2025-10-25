@@ -13,6 +13,7 @@ import CourseDetail from "../pages/landing/kourses/detail/DetailCurse.jsx";
 import MentorProfile from "../widgets/Layout/MentorLayout.jsx";
 import ProfileMentor from "../pages/mentor/mentorProfileComponents/ProfileMentor.jsx";
 import ChangeMentorInfo from "../pages/mentor/ChangeMentorInfo/ChangeMentorinfo.jsx";
+import HistoryPage from "../pages/landing/history/HistoryPage.jsx";
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +25,7 @@ export const router = createBrowserRouter([
       { path: "/project", element: <Project /> },
       { path: "/kours", element: <CoursesPage /> },
       {path: "/koursdetail/:id", element: <CourseDetail />},
+      {path:"/history",element:<HistoryPage/>}
     ],
   },
   {
