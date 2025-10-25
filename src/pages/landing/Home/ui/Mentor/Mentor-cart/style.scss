@@ -1,6 +1,6 @@
 .mentor-cart {
-  margin: 10px auto;
-  max-width: 360px; // карточка туура көлөмдө
+  // margin: 10px auto;
+  min-width: 400px;
   background: #fff;
   border-radius: 24px;
   box-shadow: 0 5px 14px rgba(118, 117, 117, 0.5);
@@ -24,7 +24,7 @@
       height: 100%;
       object-fit: cover;
       border-radius: 24px;
-      transform: scale(1); // 1.4 алып салдык
+      transform: scale(1);
       transition: transform 0.3s ease;
     }
 
@@ -116,6 +116,7 @@
         font-weight: 700;
         font-size: 18px;
         color: #23afce;
+
         span {
           text-decoration: underline;
         }
@@ -138,9 +139,139 @@
   }
 }
 
-// Адаптив
+/* -------------------------------- */
+/* Адаптив толук версия */
+/* -------------------------------- */
+@media (max-width: 1024px) {
+  .mentor-cart {
+    min-width: 300px;
+
+    .mentor-logo {
+      height: 220px;
+
+      .mentor-rating {
+        font-size: 14px;
+        padding: 5px 10px;
+      }
+
+      .mentor-btn button {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+      }
+    }
+
+    .item-m-cart {
+      padding: 16px;
+
+      h3 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+
+      .opyt div,
+      .spec div {
+        font-size: 12px;
+        padding: 4px 10px;
+      }
+
+      .btn-price .project-price {
+        font-size: 16px;
+      }
+
+      .btn-price button {
+        font-size: 14px;
+        padding: 8px 12px;
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .mentor-cart {
+    // max-width: 100%;
+
+    .mentor-logo {
+      height: 200px;
+
+      .mentor-btn button {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+      }
+    }
+
+    .item-m-cart {
+      padding: 14px;
+
+      h3 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      .opyt div,
+      .spec div {
+        font-size: 11px;
+        padding: 4px 8px;
+      }
+
+      .btn-price .project-price {
+        font-size: 14px;
+      }
+
+      .btn-price button {
+        font-size: 12px;
+        padding: 6px 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .mentor-cart {
     max-width: 100%;
+
+    .mentor-logo {
+      height: 160px;
+
+      .mentor-btn button {
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+      }
+    }
+
+    .item-m-cart {
+      padding: 10px;
+
+      h3 {
+        font-size: 14px;
+      }
+
+      p {
+        font-size: 11px;
+      }
+
+      .opyt div,
+      .spec div {
+        font-size: 10px;
+        padding: 3px 6px;
+      }
+
+      .btn-price .project-price {
+        font-size: 12px;
+      }
+
+      .btn-price button {
+        font-size: 10px;
+        padding: 5px 8px;
+      }
+    }
   }
 }

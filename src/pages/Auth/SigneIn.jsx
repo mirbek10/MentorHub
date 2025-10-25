@@ -52,8 +52,8 @@ function SigneIn() {
 
     return (
         <div className="auth">
-            <div className="auth__container">
-                <div className="auth__container__logo">
+            <div className="auth__container1">
+                <div className="auth__container1__logo"> 
                     <div className="logo">
                         <div className="logo__box logo__box--yellow">M</div>
                         <div className="logo__box logo__box--dark">M</div>
@@ -63,7 +63,7 @@ function SigneIn() {
                         </div>
                     </div>
                 </div>
-                <div className="auth__container__title">
+                <div className="auth__container1__title">
                     <h1>ВХОД</h1>
                     <form onSubmit={handleSubmit}>
                         {errorEmail && <p className="error-text">{errorEmail}</p>}
@@ -93,7 +93,7 @@ function SigneIn() {
                     </form>
                     {messageValid && <p className="messege-valid">Вы успешно вошли в свой аккаунт!</p>}
                 </div>
-                <div className="auth__container__down__title">
+                <div className="auth__container1__down__title">
                     <li onClick={() => navigate("/register")}>Регистрация</li>
                     <li>Забыли пароль?</li>
                     <div>
