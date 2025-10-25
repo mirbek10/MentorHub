@@ -42,7 +42,7 @@ const ProfileMentor = () => {
                         <div className="profile__info-stats stats">
 
                             <p>
-                                 ⭐<span>445 оценок</span>
+                                 <span>445 оценок</span>
                             </p>
                             <div>
                                 <p>студентов</p>
