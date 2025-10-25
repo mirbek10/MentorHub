@@ -15,6 +15,10 @@ import MentorProfile from "../widgets/Layout/MentorLayout.jsx";
 import ProfileMentor from "../pages/mentor/mentorProfileComponents/ProfileMentor.jsx";
 import ChangeMentorInfo from "../pages/mentor/ChangeMentorInfo/ChangeMentorinfo.jsx";
 import HistoryPage from "../pages/landing/history/HistoryPage.jsx";
+import Course from "../pages/mentor/myCourse/Course.jsx";
+import NewCourse from "../pages/mentor/newcourse/NewCourse.jsx";
+import DataCourse from "../pages/mentor/dataCourse/DataCourse.jsx";
+import VideoLesson from "../pages/mentor/VideoLesson/VidioLesson.jsx";
 
 export const router = createBrowserRouter([
     {
@@ -56,6 +60,18 @@ export const router = createBrowserRouter([
         element: <MentorProfile/>,
         children: [
             // { index: true, element: <Navigate to="profile" replace /> },
+            { path: 'profile', element: <ProfileMentor /> },
+            { path: 'course', element: <Course /> },
+            // { path: "technology", element: <Technology /> },
+            
+          ]
+        },
+        {path:'/ChangeInfoMentor',element:<ChangeMentorInfo/>},
+        {path:'/newcourse', element: <NewCourse /> },
+           { path: '/datacourse', element: <DataCourse /> },
+               { path: '/videolesson', element: <VideoLesson /> },
+
+
             {path: 'profile', element: <ProfileMentor/>},
             // { path: 'course', element: <Course /> },
             // { path: "technology", element: <Technology /> },
