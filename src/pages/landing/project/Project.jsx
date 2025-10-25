@@ -17,10 +17,6 @@ function Project() {
     return () => window.removeEventListener("resize", handleResize)
   }, [])
 
-  const tags = [
-    "#АНАЛИЗЫ", "#FRONTEND", "#BACKEND", "#DESIGN", "#DEVOPS",
-    "#ТЕСТЕР", "#ДЕВЕЛОПЕР", "#АНАЛИЗ", "#СЕКЬЮРИТИ", "#UIUX",
-  ]
 
   const allProjects = Array.from({ length: 30 }, (_, i) => ({
     id: i + 1,
@@ -48,30 +44,14 @@ function Project() {
       <h1 className="text-3xl font-bold my-8 mb-[60px]">Проекты</h1>
 
       {/* Свайпер для тегов */}
-      <Swiper
-        modules={[Autoplay]}
-        spaceBetween={8}
-        slidesPerView={windowWidth < 768 ? 1.5 : 5.5}
-        loop
-        autoplay={{ delay: 1400, disableOnInteraction: false }}
-        onSwiper={swiper => (swiperRef.current = swiper)}
-        className="w-full mb-6"
-      >
-        {tags.map((tag, index) => (
-          <SwiperSlide key={index}>
-            <div className="w-full px-5 py-3 rounded-[16px] text-[18px] font-semibold whitespace-nowrap text-center uppercase bg-white text-black shadow-md">
-              {tag}
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+
 
       <div className="grid grid-cols-1 mt-[40px] sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
         {currentProjects.map(project => (
           <ProjectCart key={project.id} project={project} />
         ))}
       </div>
-      <div className="flex justify-between items-center mt-6">
+      <div className="flex-col justify-between items-center mt-6 lg:flex lg:flex-row lg:gap-0 gap-4  flex">
         <div className="flex items-center gap-2">
           {Array.from({ length: totalPages }, (_, i) => (
             <button
