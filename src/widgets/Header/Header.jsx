@@ -90,6 +90,7 @@ export default function Header() {
         return "/kours";
       case "Менторы":
         return "/mentorpage";
+        return "/mentors";
       case "История":
         return "/history";
       default:
