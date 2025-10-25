@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
+
+.project-card {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-family: 'Jost', sans-serif;
+  max-width: 100% !important;
+  padding-bottom: 10px;
+  border-radius: 24px;
+  box-shadow: 0 5px 14px rgba(118, 117, 117, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 8px;
+  background-color: #FAFAFA;
+  height: 465px;
+}
+
+.project-item-card {
+  width: 100%;
+  padding: 16px;
+  padding-bottom: 10px;
+  border-radius: 24px;
+  background-color: #E6F9F9;
+}
+
+.project-header {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+
+  .project-rating {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 6px 10px;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 16px;
+
+    img {
+      margin-right: 6px;
+      height: 18px;
+    }
+  }
+
+  .project-fav {
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: #ffff;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #080707;
+
+    &:hover {
+      transition: all 0.3s ease;
+      background-color: #484343;
+    }
+  }
+}
+
+.project-body {
+  h3 {
+    font-family: Jost;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0px;
+
+  }
+
+  .project-subtitle {
+    color: #000000;
+    margin-top: 40px;
+    margin-bottom: 8px;
+    font-family: Jost;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0px;
+
+  }
+
+  .project-tags {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 16px;
+
+    .tag {
+      padding: 10px 20px;
+      border-radius: 16px;
+      background-color: #fff;
+      border: 1px solid #131212;
+      font-family: Jost;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0px;
+
+    }
+
+    .tag-more {
+      background-color: white;
+      color: #23AFCE;
+    }
+  }
+}
+
+.project-footer {
+  margin: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .project-price {
+    font-family: Jost;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0px;
+    text-decoration-skip-ink: auto;
+
+    span {
+      text-decoration: underline;
+      color: #000000;
+    }
+  }
+
+  .project-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-family: Jost;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    &:hover {
+      background-color: #444;
+    }
+  }
+}
