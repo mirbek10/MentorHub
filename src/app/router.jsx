@@ -6,6 +6,7 @@ import Register from "../pages/Auth/Register/Register.jsx";
 import Profile from "../pages/Profile/Profile.jsx";
 import NotFound from "../pages/NotFound/NotFound.jsx";
 import Mentor from "../pages/Mentor/Mentor.jsx";
+import MentorPage from "../pages/landing/mentorPage/MentorPage.jsx";
 
 export const router = createBrowserRouter([
   {
@@ -13,6 +14,7 @@ export const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: "/", element: <Home /> },
+      {path:"/mentorpage", element: <MentorPage/>}
     ],
   },
   {
