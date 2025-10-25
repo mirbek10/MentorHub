@@ -16,13 +16,14 @@ import play1 from "../../../public/assets/play1.svg";
 // import img from "../../../public/assets/img.svg";
 import x11 from "../../../public/assets/x11.svg";
 import Logo from "../../shared/Ui/logo/Logo";
+import { GoAlert } from "react-icons/go";
 
 export default function Header() {
   const [activeMenu, setActiveMenu] = useState("Главная");
   const [isOpen, setIsOpen] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
   const [activeView, setActiveView] = useState("messages");
-  const menuItems = ["Главная", "Курсы", "Менторы", "Проекты", "История"];
+  const menuItems = ["Главная", "Курсы", "Менторы", "История"];
 
   const messages = [
     {
@@ -89,13 +90,12 @@ export default function Header() {
         return "/kours";
       case "Менторы":
         return "/mentorpage";
-      case "Проекты":
-        return "/projects";
       case "История":
         return "/history";
       default:
         return "/";
     }
+
   };
 
   const openPopup = () => {
@@ -187,7 +187,7 @@ export default function Header() {
                 />
               </svg>
             </button>
-            <h2 className="text-xl font-bold">Уведомление</h2>
+            <h2 clssName="text-xl font-bold">Уведомление</h2>
           </div>
           <img
             className="absolute top-8 right-10 text-xl font-bold text-black hover:text-gray-600"
@@ -241,7 +241,10 @@ export default function Header() {
           {menuItems.map((item) => (
             <Link to={getPath(item)} key={item}>
               <button
-                onClick={() => setActiveMenu(item)}
+                onClick={() => {
+                  setActiveMenu(item);
+                  getPath(item);
+                }}
                 className={`px-4 py-1.5 rounded transition-colors duration-200 rounded-[10px] ${
                   activeMenu === item
                     ? "bg-black text-white"
@@ -270,7 +273,7 @@ export default function Header() {
             </div>
           </Link>
 
-          <Link to="/register-admin">
+          <Link to="/login">
             <img
               src={glaw4 || "/placeholder.svg"}
               alt="avatar"
@@ -321,11 +324,11 @@ export default function Header() {
               className=" flex justify-center mr-2"
               style={{ marginRight: "20px", width: "100px" }}
             >
-              <Link >
+              <Link to={getPath(item)}>
                 <button
                   onClick={() => {
                     setActiveMenu(item);
-                    setIsOpen(false);
+                    // setIsOpen(false);
                     getPath(item);
                   }}
                   className={`whitespace-nowrap px-4 py-2 rounded font-semibold transition-colors duration-200 ${
