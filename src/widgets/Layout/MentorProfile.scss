@@ -1,5 +1,6 @@
 .mentor-profile {
   display: flex;
+  width: 1280px;
   min-height: 100vh;
   
   .sidebar {
@@ -38,6 +39,7 @@
     }
 
     .nav-menu {
+      margin-top: 50px;
       display: flex;
       flex-direction: column;
       gap: 12px;
@@ -93,7 +95,7 @@
 
   .content {
     flex-grow: 1;
-    background-color: #fafafa;
+    background-color: #ffffff;
     padding: 40px;
   }
 }

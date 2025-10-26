@@ -65,7 +65,7 @@ function MentorList() {
 //   if (error) { return <div>Error: {error.message}</div> }
 
   return (
-    <div className="container mx-auto ">
+    <div className="w-[1180px] mx-auto ">
       <h1 className="text-3xl font-bold my-7 mb-[60px]">Менторы</h1>
 
       {/* <Swiper
@@ -100,7 +100,7 @@ function MentorList() {
                 <h1 className="text-3xl font-bold">Нет менторов</h1>
               </div>
             ) : (
-              <div className="flex flex-wrap justify-center gap-6 mb-6">
+              <div className="flex flex-wrap justify-center gap-3 mb-6">
                 {allProjects.map((mentor) => (
                   <MentorCart key={mentor.id} mentor={mentor} />
                 ))}

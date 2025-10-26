@@ -5,6 +5,7 @@ import { Pagination } from 'swiper/modules';
 import MentorCart from './Mentor-cart/MentorCart';
 import { mentors } from './Data/Data'; 
 import { IoPlayOutline } from "react-icons/io5";
+import strel3 from "../../../../../../public/assets/strel3.svg";
 import { RiPlayReverseLargeLine } from "react-icons/ri";
 
 import 'swiper/css';
@@ -38,8 +39,12 @@ const Mentor = () => {
     <div className='Mentor px-4 py-8'>
       <div className='container item-mentor'>
         <h1>Менторы</h1>
-        <div className="mentor-controls">
-        <Link to={'mentors'}><h4>Посмотреть все <IoPlayOutline /></h4></Link>
+        <div className="mentor-controls pr-[50px]">
+        <button
+                                   className="flex hover:text-gray-700 rounded-[25px] bg-[rgba(250,250,250,1)] p-3 pl-5 pr-5">
+                                   <Link to="courses">Посмотреть все</Link>
+                                   <img className="ml-5" src={strel3} alt=""/>
+                               </button>
           {isMobile && (
             <>
               <button onClick={handlePrev} aria-label="Previous slide">

@@ -8,7 +8,7 @@ import Logo from "../../shared/Ui/logo/Logo";
 const Footer = () => {
     return (
         <footer className="w-full bg-white py-6 border-t border-gray-200">
-            <div className="hidden container md:block w-full  mx-auto ">
+            <div className="hidden container md:block w-full  mx-auto px-[20px]">
                 <div className="rounded-lg">
                     <div className="flex justify-between items-start">
                         <div>

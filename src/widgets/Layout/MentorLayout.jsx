@@ -8,12 +8,9 @@ import { TbDeviceTvOld } from 'react-icons/tb';
 import { FaChalkboardTeacher, FaUserAlt, FaRegThumbsUp } from 'react-icons/fa';
 
 const navItems = [
-  { to: 'students', label: 'Студенты ', Icon: MdMenuBook },
   { to: 'requests', label: 'Запросы', Icon: HiMiniBellAlert },
   { to: 'course', label: 'Мои курсы', Icon: TbDeviceTvOld },
-  { to: 'technology', label: 'Мои технологии', Icon: FaChalkboardTeacher },
   { to: 'profile', label: 'Профиль', Icon: FaUserAlt },
-  { to: 'reviews', label: 'Отзывы', Icon: FaRegThumbsUp },
 ];
 
 export default function MentorProfile() {
@@ -53,7 +50,7 @@ export default function MentorProfile() {
             <div className="logo__box logo__box--dark">M</div>
             <div className="logo__text">
               <div className="logo__text--top">MIND</div>
-              <div className="logo__text--bottom">mentor</div>
+              <div className="logo__text--bottom">hub</div>
             </div>
           </div>
         </div>

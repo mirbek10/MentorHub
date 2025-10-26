@@ -8,7 +8,7 @@ import Icon from "../../../../../public/assets/icons/icon2.svg";
 
 const CourseDetail = () => {
     return (
-        <div className="container px-4 md:px-6 lg:px-0">
+        <div className="container m-auto py-6 px-40 ">
             <h3 className="text-[24px] md:text-[28px] lg:text-[32px] font-[700] mt-[40px] md:mt-[60px] mb-[30px] md:mb-[40px]">
                 Курс по дизайну UX/UI Figma,Affter Effect
             </h3>
