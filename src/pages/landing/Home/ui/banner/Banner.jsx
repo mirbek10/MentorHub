@@ -12,18 +12,18 @@ const slides = [
     bg: '#D5F6ED',
     title: 'Mentor Hub — место, где вы можете найти ментора и курсы, а также нужные проекты',
   },
-//   {
-//     bg: '#E1F3FF',
-//     title: 'Mind mentor — место, где вы можете найти ментора и курсы, а также нужные проекты',
-//   },
-//   {
-//     bg: '#D5F6ED',
-//     title: 'Mind mentor — место, где вы можете найти ментора и курсы, а также нужные проекты',
-//   },
-//   {
-//     bg: '#E2DBFA',
-//     title: 'Mind mentor — место, где вы можете найти ментора и курсы, а также нужные проекты'
-//   },
+  // {
+  //   bg: '#E1F3FF',
+  //   title: 'Mind mentor — место, где вы можете найти ментора и курсы, а также нужные проекты',
+  // },
+  // {
+  //   bg: '#D5F6ED',
+  //   title: 'Mind mentor — место, где вы можете найти ментора и курсы, а также нужные проекты',
+  // },
+  // {
+  //   bg: '#E2DBFA',
+  //   title: 'Mind mentor — место, где вы можете найти ментора и курсы, а также нужные проекты'
+  // },
 ];
 
 const Banner = () => {
@@ -48,7 +48,7 @@ const Banner = () => {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div
-              className="w-full h-auto p-6 rounded-[24px] transition-all duration-300"
+              className="w-[100%] h-auto p-6 rounded-[24px] transition-all duration-300"
               style={{ backgroundColor: slide.bg }}
             >
               <h6 className="text-[24px] font-medium font-jost text-center text-[#333] mt-[66px]">

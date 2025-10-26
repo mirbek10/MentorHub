@@ -192,7 +192,7 @@ const Courses = () => {
                         <button
                             className="flex hover:text-gray-700 rounded-[25px] bg-[rgba(250,250,250,1)] p-3 pl-5 pr-5">
                             <Link to="courses">Посмотреть все</Link>
-                            <img className="ml-5 mt-1" src={strel3} alt=""/>
+                            <img className="ml-5" src={strel3} alt=""/>
                         </button>
                         {windowWidth >= 768 && (
                             <div className="flex gap-[5px] relative left-5">
@@ -222,7 +222,7 @@ const Courses = () => {
                             prevEl: ".swiper-button-prev-courses",
                             nextEl: ".swiper-button-next-courses",
                         }}
-                        className="courses-swiper w-full h-[560px]"
+                        className="courses-swiper w-full h-auto"
                     >
                         {courses.map((course) => (
                             <SwiperSlide key={course.id}>
